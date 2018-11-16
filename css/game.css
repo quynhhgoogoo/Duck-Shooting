@@ -38,7 +38,7 @@ input+label {
 input:checked+label {
     opacity: 1;
     transition: 0.5s;
-    transform: rotate(120deg);
+    transform: rotate(100deg);
     transform-origin: 60%;
     z-index: -5;
 }
@@ -50,25 +50,25 @@ input:checked+label {
 }
 
 .duck:nth-last-of-type(2) {
-    animation: duckfly 15s linear 1s infinite;
-    animation-direction: alternate;
-    cursor: url(../img/aim.png), text;
-}
-
-.duck:nth-last-of-type(3) {
     animation: duckfly 20s linear 1s infinite;
     animation-direction: alternate;
     cursor: url(../img/aim.png), text;
 }
 
-.duck:nth-last-of-type(4) {
+.duck:nth-last-of-type(3) {
     animation: duckfly 25s linear 1s infinite;
     animation-direction: alternate;
     cursor: url(../img/aim.png), text;
 }
 
-.duck:nth-last-of-type(5) {
+.duck:nth-last-of-type(4) {
     animation: duckfly 30s linear 1s infinite;
+    animation-direction: alternate;
+    cursor: url(../img/aim.png), text;
+}
+
+.duck:nth-last-of-type(5) {
+    animation: duckfly 40s linear 1s infinite;
     animation-direction: alternate;
     cursor: url(../img/aim.png), text;
 }
@@ -85,18 +85,18 @@ input:checked+label {
     background-color: #dadada;
 }
 
-.score :after {
+.score:after {
     content: counter(score);
     display: inline-block;
 }
 
 .score:before {
-    content: 'score :';
+    content: 'Score :';
     display: inline-block;
     margin-right: 10px;
 }
 
-.input:checked {
+input:checked {
     counter-increment: score;
 }
 
